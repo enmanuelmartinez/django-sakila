@@ -55,3 +55,4 @@ docs/_build/
 # This project
 dev_site
 dev_site.patch
+.idea/

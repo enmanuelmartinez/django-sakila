@@ -1,4 +1,4 @@
-Django<1.7
+Django
 bpython
 django-braces
 django-model-utils
