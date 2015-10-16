@@ -94,9 +94,7 @@ class Staff(models.Model):
 
 class Store(models.Model):
     store_id = models.AutoField(primary_key=True)
-    manager_staff = models.ForeignKey(
-        Staff, unique=True, related_name='store_managed_by_me'
-    )
+    manager_staff = models.OneToOneField(Staff, related_name='store_managed_by_me')
     address = models.ForeignKey(Address)
     last_update = models.DateTimeField(auto_now=True)
 

@@ -20,7 +20,7 @@ def create_test_site(path):
     shell = False
     if system().lower() == 'windows':
         shell = True
-        
+
     subprocess.call(cmd, shell=shell)
 
 
