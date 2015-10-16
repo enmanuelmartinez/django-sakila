@@ -37,7 +37,7 @@ class Film(models.Model):
     description = models.TextField(blank=True)
     release_year = models.IntegerField(blank=True, null=True)
     language = models.ForeignKey('Language')
-    original_language = models.ForeignKey('Language', blank=True, null=True,related_name='filmAsOriginalLanguage')
+    original_language = models.ForeignKey('Language', blank=True, null=True, related_name='filmAsOriginalLanguage')
     rental_duration = models.SmallIntegerField()
     rental_rate = models.DecimalField(max_digits=4, decimal_places=2)
     length = models.SmallIntegerField(blank=True, null=True)

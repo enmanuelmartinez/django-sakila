@@ -8,7 +8,6 @@ from addresses.models import Address
 from films.models import Film
 
 
-
 class Customer(models.Model):
     customer_id = models.AutoField(primary_key=True)
     store = models.ForeignKey('Store')
