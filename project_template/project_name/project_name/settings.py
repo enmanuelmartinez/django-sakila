@@ -22,33 +22,33 @@ path.append(DJANGO_ROOT)
 
 
 ########## DEBUG CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#debug
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#debug
 DEBUG = True
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#template-debug
 TEMPLATE_DEBUG = DEBUG
 ########## END DEBUG CONFIGURATION
 
 
 ########## EMAIL CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#email-backend
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ########## END EMAIL CONFIGURATION
 
 
 ########## MANAGER CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#admins
 ADMINS = (
     ('Your Name', 'your_email@example.com'),
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#managers
 MANAGERS = ADMINS
 ########## END MANAGER CONFIGURATION
 
 
 ########## DATABASE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -63,7 +63,7 @@ DATABASES = {
 
 
 ########## CACHE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#caches
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#caches
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
@@ -73,48 +73,48 @@ CACHES = {
 
 
 ########## GENERAL CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#time-zone
 TIME_ZONE = 'America/Los_Angeles'
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#language-code
 LANGUAGE_CODE = 'en-us'
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#site-id
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#site-id
 SITE_ID = 1
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#use-i18n
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#use-i18n
 USE_I18N = True
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#use-l10n
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#use-l10n
 USE_L10N = True
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#use-tz
 USE_TZ = True
 ########## END GENERAL CONFIGURATION
 
 
 ########## MEDIA CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#media-root
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#media-url
 MEDIA_URL = '/media/'
 ########## END MEDIA CONFIGURATION
 
 
 ########## STATIC FILE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#static-root
 STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#static-url
 STATIC_URL = '/static/'
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
+# See: https://docs.djangoproject.com/en/1.8/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     normpath(join(SITE_ROOT, 'static')),
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
+# See: https://docs.djangoproject.com/en/1.8/ref/contrib/staticfiles/#staticfiles-finders
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -123,7 +123,7 @@ STATICFILES_FINDERS = (
 
 
 ########## SECRET CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#secret-key
 # Note: This key should only be used for development and testing.
 SECRET_KEY = r"{{ secret_key }}"
 ########## END SECRET CONFIGURATION
@@ -131,13 +131,13 @@ SECRET_KEY = r"{{ secret_key }}"
 
 ########## SITE CONFIGURATION
 # Hosts/domain names that are valid for this site
-# See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
+# See https://docs.djangoproject.com/en/1.8/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
 ########## END SITE CONFIGURATION
 
 
 ########## FIXTURE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#std:setting-FIXTURE_DIRS
 FIXTURE_DIRS = (
     normpath(join(SITE_ROOT, 'fixtures')),
 )
@@ -145,25 +145,25 @@ FIXTURE_DIRS = (
 
 
 ########## TEMPLATE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#template-context-processors
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.media',
-    'django.core.context_processors.static',
-    'django.core.context_processors.tz',
-    'django.contrib.messages.context_processors.messages',
+    "django.contrib.auth.context_processors.auth",
+    "django.template.context_processors.debug",
+    "django.template.context_processors.i18n",
+    "django.template.context_processors.media",
+    "django.template.context_processors.static",
+    "django.template.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
     'django.core.context_processors.request',
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#template-loaders
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#template-dirs
 TEMPLATE_DIRS = (
     normpath(join(SITE_ROOT, 'templates')),
 )
@@ -171,21 +171,23 @@ TEMPLATE_DIRS = (
 
 
 ########## MIDDLEWARE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#middleware-classes
+# See: https://docs.djangoproject.com/en/1.8/topics/http/middleware/
 MIDDLEWARE_CLASSES = (
     # Default Django middleware.
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 )
 ########## END MIDDLEWARE CONFIGURATION
 
 
 ########## URL CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#root-urlconf
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#root-urlconf
 ROOT_URLCONF = '%s.urls' % SITE_NAME
 ########## END URL CONFIGURATION
 
@@ -193,19 +195,12 @@ ROOT_URLCONF = '%s.urls' % SITE_NAME
 ########## APP CONFIGURATION
 DJANGO_APPS = (
     # Default Django apps:
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # Useful template tags:
-    # 'django.contrib.humanize',
-
-    # Admin panel and documentation:
-    'django.contrib.admin',
-    # 'django.contrib.admindocs',
 )
 
 # Apps specific for this project go here.
@@ -215,17 +210,17 @@ LOCAL_APPS = (
     'rentals',
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
 ########## END APP CONFIGURATION
 
 
 ########## LOGGING CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#logging
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#logging
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
-# See http://docs.djangoproject.com/en/dev/topics/logging for
+# See http://docs.djangoproject.com/en/1.8/topics/logging for
 # more details on how to customize your logging configuration.
 LOGGING = {
     'version': 1,
@@ -254,7 +249,7 @@ LOGGING = {
 
 
 ########## WSGI CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#wsgi-application
+# See: https://docs.djangoproject.com/en/1.8/ref/settings/#wsgi-application
 WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 ########## END WSGI CONFIGURATION
 

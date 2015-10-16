@@ -3,8 +3,6 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic import TemplateView
 
-import xadmin
-xadmin.autodiscover()
 
 from django.contrib import admin
 admin.autodiscover()
@@ -14,9 +12,6 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', '{{ project_name }}.views.home', name='home'),
     # url(r'^{{ project_name }}/', include('{{ project_name }}.foo.urls')),
-
-    url(r'', include(xadmin.site.urls)),
-
     url(r'^admin/', include(admin.site.urls)),
 
 )
