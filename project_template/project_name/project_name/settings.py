@@ -208,6 +208,7 @@ LOCAL_APPS = (
     'films',
     'addresses',
     'rentals',
+    'django_extensions'
 )
 
 # See: https://docs.djangoproject.com/en/1.8/ref/settings/#installed-apps
